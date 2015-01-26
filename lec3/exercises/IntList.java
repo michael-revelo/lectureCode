@@ -35,7 +35,10 @@ public class IntList {
       * simplicity, assume the item exists. */
     public int get(int i) {
         return 0;
-        /** your code here */
+        if (i == 0) {
+            return this.head;
+        }
+        return this.tail.get(i - 1)
     }
 
     public String toString() {
